@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var b = 1;
+    var K;
+    var a = 2;
+    let sout;
+    sout = "<table border='1' width='1000' cellspacing='0' cellpadding='3'>"
+    for (a = 1; a <= 10; a++) {
+        sout = sout + "<tr>";
+        b = b++;
+        for (b = 1; b <= 9; b++) {
+            k = a * b;
+            sout = sout + "<td>" + b + " * " + a + " = " + k  + "</td>";
+        }
+        sout = sout + "</tr>";
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
